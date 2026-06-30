@@ -1,0 +1,31 @@
+================================================================================
+DRAW MODE CONFIDENCE ANALYSIS REPORT
+================================================================================
+
+TRAINING IMAGES STATISTICS
+--------------------------------------------------------------------------------
+shape               : Mean=32.0000, Std=0.0000
+size                : Mean=1024.0000, Std=0.0000
+mean                : Mean=175.4305, Std=12.7308
+std                 : Mean=103.9773, Std=4.8764
+min                 : Mean=0.0000, Std=0.0000
+max                 : Mean=255.0000, Std=0.0000
+non_zero_ratio      : Mean=0.8615, Std=0.0423
+edge_ratio          : Mean=0.5967, Std=0.0597
+
+CANVAS DRAWINGS STATISTICS
+--------------------------------------------------------------------------------
+shape               : Mean=32.0000, Std=0.0000
+size                : Mean=1024.0000, Std=0.0000
+mean                : Mean=150.6992, Std=0.0000
+std                 : Mean=115.0663, Std=0.0000
+min                 : Mean=0.0000, Std=0.0000
+max                 : Mean=255.0000, Std=0.0000
+non_zero_ratio      : Mean=0.7275, Std=0.0000
+edge_ratio          : Mean=0.5811, Std=0.0000
+
+KEY DIFFERENCES
+--------------------------------------------------------------------------------
+Pixel Mean Difference: 24.7312
+Pixel Std Difference: 11.0890
+Non-zero Ratio Difference: 0.1340

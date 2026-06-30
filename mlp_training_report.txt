@@ -1,0 +1,32 @@
+================================================================================
+MLP TRAINING REPORT
+================================================================================
+
+Dataset Information:
+  Total samples: 49200
+  Training samples: 39360
+  Validation samples: 9840
+  Number of classes: 656
+  Input features: 1024 (32x32 pixels flattened)
+
+Model Architecture:
+  Hidden layers: (512, 256, 128)
+  Activation: relu
+  Solver: adam
+  Model size: 17.73 MB
+
+Training Results:
+  Training Accuracy: 0.9864 (98.64%)
+  Validation Accuracy: 0.9402 (94.02%)
+  Training Time: 2944.22 seconds (49.07 minutes)
+  Iterations completed: 41
+  Final loss: 0.051999
+
+Confusion Matrix:
+  Shape: (656, 656)
+  Correct predictions: 9252
+  Total predictions: 9840
+
+================================================================================
+MLP TRAINING COMPLETE
+================================================================================

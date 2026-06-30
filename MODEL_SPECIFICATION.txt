@@ -1,0 +1,91 @@
+KANNADA OCR MODEL SPECIFICATION
+
+## MODEL FILE
+
+hog_svm_model_normalized.pkl
+
+## MODEL TYPE
+
+LinearSVC (Scikit-Learn)
+
+## DATASET
+
+Total Classes: 656
+Images Per Class: 75
+Total Images: 49,200
+
+## IMAGE FORMAT
+
+Grayscale
+32 x 32 pixels
+
+## TRAINING PIPELINE
+
+1. Load image pixels.
+
+2. Normalize:
+   image = image / 255.0
+
+3. Reshape to 32x32.
+
+4. Extract HOG features using:
+
+   orientations = 9
+   pixels_per_cell = (8,8)
+   cells_per_block = (2,2)
+   block_norm = 'L2'
+
+5. Train LinearSVC.
+
+## MODEL OUTPUT
+
+Predicted Class ID (1-656)
+
+## HOG PARAMETERS
+
+orientations = 9
+pixels_per_cell = (8,8)
+cells_per_block = (2,2)
+block_norm = 'L2'
+
+## INFERENCE PIPELINE
+
+1. Convert image to grayscale.
+2. Resize image to 32x32.
+3. Normalize:
+   image = image / 255.0
+4. Extract HOG features using the same parameters.
+5. Pass features to hog_svm_model_normalized.pkl.
+6. Return:
+
+   * Predicted class
+   * Confidence score
+   * Top 5 predictions
+
+## IMPORTANT
+
+Use the existing model exactly as-is.
+Do not retrain.
+Do not replace the model.
+Build the OCR system around the supplied model.
+
+## FILES PROVIDED
+
+1. hog_svm_model_normalized.pkl
+2. train_svm.py (original training code)
+3. predict_colab.py (original prediction/testing code)
+4. Sample training images
+
+## WEBSITE REQUIREMENTS
+
+1. Upload image.
+2. Preview uploaded image.
+3. Predict button.
+4. Show:
+
+   * Predicted class
+   * Confidence
+   * Top 5 predictions
+   * Processed 32x32 image
+
+Upload image mode should be the primary OCR workflow.
